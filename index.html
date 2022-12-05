@@ -6,11 +6,12 @@
   <script src="https://unpkg.com/meshoptimizer@0.16.0/meshopt_decoder.js"></script>
 </head>
 <body>
-  <a-scene embedded arjs>
+  <a-scene gltf-model="dracoDecoderPath: путь/к/декодеру/;
+ meshoptDecoderPath: path/to/meshopt_decoder.js ;" embedded arjs>
     <a-marker preset="hiro">
       <a-entity  
       rotation="-90 0 0"
-      scale="0.01 0.01 0.01" 
+      scale="0.1 0.1 0.1"
       gltf-model="https://koval178.github.io/test1.gltf">
       </a-entity>
     </a-marker>
