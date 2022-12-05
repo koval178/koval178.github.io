@@ -3,10 +3,11 @@
 <head>
   <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js "></script>
   <script src="https://unpkg.com/meshoptimizer@0.16.0/meshopt_decoder.js"></script>
 </head>
 <body>
-  <a-scene gltf-model="dracoDecoderPath: ../dracoDecoderPath/" embedded arjs>
+  <a-scene gltf-model="dracoDecoderPath: ../dracoDecoderPath/" animation-mixer="clip: run_*" embedded arjs>
     <a-marker preset="hiro">
       <a-entity  
       rotation="-90 0 0"
